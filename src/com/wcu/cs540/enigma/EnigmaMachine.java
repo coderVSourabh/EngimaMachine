@@ -43,8 +43,9 @@ public class EnigmaMachine {
 				ch = r1.encodeRL(ch);
 				incrementRotors();
 				sb.append(ch);
-			} else
+			} else {
 				sb.append(ch);
+			}
 		}
 		return sb.toString();
 	}

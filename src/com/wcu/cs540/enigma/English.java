@@ -23,8 +23,9 @@ public class English {
 
 	/**
 	 * @param s
-	 *            This method count the number of capital letters and updates
-	 *            the same locally
+	 *  
+	 *  This method count the number capital 
+	 *  letters and updates the same locally
 	 */
 	public static void countAllLetters(String s) {
 		// count reset
@@ -45,24 +46,19 @@ public class English {
 	 * of each letter relative to other letter
 	 */
 	private static void calculatePercentageForAllLetters() {
-		
 		// percentage reset
-		for (int i = 0; i < max; i++) {
+		for (int i = 0; i < max; i++)
 			letterPercent[i] = 0;
-		}
-
-		int sum = 0;
-		for (int i = 0; i < max; i++) {
-			sum += letterCount[i];
-		}
 		
-		for (int i = 0; i < max; i++) {
+		int sum = 0;
+		for (int i = 0; i < max; i++)
+			sum += letterCount[i];
+		
+		for (int i = 0; i < max; i++)
 			letterPercent[i] = (double) (letterCount[i] * 100) / sum;
-		}
 	}
 
 	/**
-	 * 
 	 * @param mult
 	 * @return count of alphabets that are not in the range
 	 * 		   of actual frequencies of English alphabet
